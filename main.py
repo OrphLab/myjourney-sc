@@ -1,6 +1,8 @@
 import os
-
 from Employee import Employee
+
+
+
 
 
 def clear_terminal():
@@ -17,7 +19,7 @@ if __name__ == "__main__":
     emp_one = Employee("Simon", "Kaczmarek", "Senior Talent Management Consultant") #using string name, but this would be a unique # int
     emp_two = Employee("Anne", "Andersen", "Director, Finance")
 
-    print(emp_two)
+    print(emp_one)
     # print()
     # print(emp_two)
 

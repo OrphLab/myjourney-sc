@@ -1,6 +1,7 @@
-#Individual contributor path
 from Resources import extract_grade_data
-from Data import M_GRADE_DATA, IC_GRADE_DATA
+from resources.data.Data import M_GRADE_DATA, IC_GRADE_DATA
+
+#Individual contributor path
 class ICGrade:
     def __init__(self, grade):
         if grade not in IC_GRADE_DATA["Grade"]:

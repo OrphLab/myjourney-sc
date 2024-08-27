@@ -1,14 +1,6 @@
-
 from JobProfile import JobProfile
-from typing import Tuple, Optional
-
 
 class Employee:
-
-
-    #Employee class, holds the employee
-    # first name(fname), last name (str)
-    # jobprofile which is a class, that holds information on job profile
     def __init__(self, fname:str, lname:str, jobprofile:str) -> None:
         self.jobprofile = JobProfile(jobprofile)
         self.fname = fname
@@ -17,5 +9,10 @@ class Employee:
     def __str__(self) -> str:
         return (f"Name: {self.fname} {self.lname}\n"
                 f"{self.jobprofile}\n")
-                
     
+    def full_name(self):
+        return (f"{self.fname} {self.lname}\n")
+        
+    
+    def job_profile(self):
+        pass

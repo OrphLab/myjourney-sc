@@ -1,0 +1,488 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.7s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/SimCorp_231121_1518.jpg') no-repeat center center/cover;
+        
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20%;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 2px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 100px;
+    margin-top: 0;
+    color:#ddd
+}
+
+.hero a {
+    background: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.hero a:hover {
+    background: #0056b3;
+}
+
+/* Career Pathways */
+.career-pathways {
+    background: #f4f4f4;
+}
+
+.career-pathways h2 {
+    font-size: 2.5 rem;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.career-pathways p {
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5rem;
+}
+
+
+.career-pathways .pathway {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.career-pathways .pathway div {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(172, 40, 40, 0.473);
+    width: 30%;
+}
+
+.custom-checkbox .form-check-label {
+    margin-left: 5px;  /* Reduce space between checkbox and label text */
+    padding-left: 0;   /* Remove padding if any */
+    color: #666;
+}
+
+/* Check box */
+
+.checkbox-container {
+    display: flex;
+    justify-content: center; /* Center the checkboxes in the container */
+    gap: 35px; /* Add space between checkboxes */
+    margin-bottom: 25px; /* Bottom margin */
+}
+.checkbox-wrapper-2 {
+    display: flex;
+    align-items: center; /* Align the label with the checkbox */
+}
+
+.checkbox-wrapper-2 label {
+    margin-left: 2px; /* Space between checkbox and label */
+    vertical-align: middle;
+    line-height: 20px; /* Match the checkbox height */
+}
+
+.checkbox-wrapper-2 .ikxBAC {
+    appearance: none;
+    background-color: #dfe1e4;
+    border-radius: 72px;
+    border-style: none;
+    flex-shrink: 0;
+    height: 20px;
+    margin: 0;
+    position: relative;
+    width: 30px;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC::before {
+    bottom: -6px;
+    content: "";
+    left: -6px;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC,
+  .checkbox-wrapper-2 .ikxBAC::after {
+    transition: all 100ms ease-out;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC::after {
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 14px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 14px;
+  }
+
+  .checkbox-wrapper-2 input[type=checkbox] {
+    cursor: default;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:hover {
+    background-color: #c9cbcd;
+    transition-duration: 0s;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:checked {
+    background-color: #6e79d6;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:checked::after {
+    background-color: #fff;
+    left: 13px;
+  }
+
+  .checkbox-wrapper-2 :focus:not(.focus-visible) {
+    outline: 0;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:checked:hover {
+    background-color: #535db3;
+  }
+
+  .progression-section {
+    margin-bottom: 50px;
+  }
+
+/* Testimonials Section */
+.testimonials {
+    background: #007BFF;
+    color: white;
+    padding: 40px 20px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.testimonials .testimonial {
+    margin-bottom: 30px;
+}
+
+.testimonials .testimonial p {
+    font-style: italic;
+}
+
+/* Container for the side-by-side layout */
+.carousel-container {
+    display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    background-color: #3b3a3a; /* Set the background color */
+    padding: 20px;
+    gap: 20px; /* Space between the sections */
+    height: auto; /* Full viewport height to center vertically */
+    width: 100vw; /* Full viewport width to ensure full width */
+    box-sizing: border-box; /* Ensure padding is included in the width and height calculations */
+}
+
+.carousel-header {
+    margin-bottom: 20px; /* Space between header and carousel */
+    margin-top: 30px;
+}
+.carousel-header p{
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5rem;
+}
+/* Left and right sections of the layout */
+.carousel-content, .carousel-controls {
+    flex: 1; /* Make the sections flexible */
+}
+
+.carousel-section {
+    background-color: #17a2b8; /* Set the background color */
+    padding: 20px;
+    text-align: center; /* Center text horizontally */
+}
+
+/* Center the text in the card */
+.carousel .card-body {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Style the carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(7, 7, 7, 0.5); /* Add a semi-transparent background */
+    border-radius: 50%;
+    background-size: 50%, 50%;
+}
+
+/* Center the control arrows vertically */
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Adjust the size of the carousel controls */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23007bff' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0l-5 4 5 4v-8z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23007bff' viewBox='0 0 8 8'%3E%3Cpath d='M2.5 0l5 4-5 4v-8z'/%3E%3C/svg%3E");
+}
+
+/* Add some padding around the carousel */
+.carousel {
+    padding: 20px 0;
+}
+
+/* Center the carousel itself within its section */
+.carousel {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Card styling */
+.card {
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.card-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.card-text {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Add background color to the card */
+.card {
+    background-color: #ffffff;
+}
+
+/* Customizing carousel controls */
+.carousel-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.carousel-controls a {
+    text-decoration: none;
+}
+
+
+/* Application Process */
+.application-process {
+    background: white;
+}
+
+.application-process h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.application-process .step {
+    margin-bottom: 20px;
+}
+
+.application-process .step span {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Fade in on scroll */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+html {
+    font-size: 14px;
+}
+
+.container {
+    font-size: 14px;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Masonry Grid with Grid Layout */
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust based on desired column width */
+    gap: 15px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+}
+
+.card-custom {
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Grid layout manages the width */
+}
+
+.card-custom-img {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-custom-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    position: absolute;
+    top: 100px;
+    left: 1.25rem;
+    width: 100px;
+    height: 100px;
+}
+
+.card-body {
+    text-align: left;
+    padding: 1rem; /* Added padding for better layout */
+}
+
+.card-text {
+    margin-bottom: 1rem;
+}
+
+.card-title-custom {
+    font-size: 22px;
+    color: rgb(56, 52, 52); /* Dark grey for text */
+
+    font-weight: bold; /* Make text bold */
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 25px;
+}
+.card-footer {
+    background: inherit;
+    border-color: inherit;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem; /* Added padding for better layout */
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+#currentbusinessfunction {
+    margin: 0;
+    padding: 0;
+}
+
+#currentbusinessfunction {
+    display: block; /* Default state */
+}
+
+#currentbusinessfunction.hidden {
+    display: none; /* State when hidden */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .masonry {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    }
+}
+
+/* Quote Cards */
+.blockquote-card {
+border: 1px solid #ddd;
+border-radius: 0.25rem;
+padding: 2rem; /* Increased padding for better visual balance */
+background-color: #f9f9f9;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+display: flex; /* Flexbox for centering */
+flex-direction: column;
+justify-content: center; /* Center vertically */
+align-items: center; /* Center horizontally */
+text-align: center; /* Center text horizontally */
+height: 50px; /* Set a fixed height for better visual alignment */
+position: relative; /* Relative positioning for absolute footer */
+}
+
+.blockquote-card blockquote {
+margin-bottom: 0;
+font-size: 1.25rem; /* Adjust font size if needed */
+}
+
+.blockquote-card footer {
+position: absolute;
+bottom: 1rem; /* Space from the bottom */
+text-align: center;
+font-size: 0.9rem;
+color: #666;
+}

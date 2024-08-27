@@ -176,74 +176,86 @@ JOBFAMILY_DATA_NEW = {
     "Administration": {
         "business_function": {
             "Office Management": [
-                {"EA": ["IC", 4]},
-                {"Personal Assistant": ["IC", 3]}
+                {"EA": ["IC", 4, ["skill_one", "skill_two", "skill_three"], True]},
+                {"Personal Assistant": ["IC", 3, ["skill_one", "skill_two", "skill_three"], False]}
             ]
         }
     },
     "Finance": {
         "business_functions": {
             "Accounting and Financial Reporting": [
-                {"Accountant": ["IC", 2]},
-                {"Director, Accounting & Compliance": ["M", 7]},
-                {"Director, Tax": ["M", 7]}
+                {"Accountant": ["IC", 2, ["skill_one", "skill_two", "skill_three"], True]},
+                {"Director, Accounting & Compliance": ["M", 7, ["skill_one", "skill_two", "skill_three"], True]},
+                {"Director, Tax": ["M", 7, ["skill_one", "skill_two", "skill_three"], False]}
             ],
             "Controlling and Mgmt. Reporting": [
-                {"Business Controller": ["IC", 3]},
-                {"Director, Finance": ["M", 7]},
-                {"Finance Process Consultant": ["IC", 3]}
+                {"Business Controller": ["IC", 3, ["skill_one", "skill_two", "skill_three"], True]},
+                {"Director, Finance": ["M", 7, ["skill_one", "skill_two", "skill_three"], False]},
+                {"Finance Process Consultant": ["IC", 3, ["skill_one", "skill_two", "skill_three"], True]}
             ],
         }
     },
-    "People & Culture": {
+     "People & Culture": {
         "business_functions": {
             "Compensation & Benefits": [
-                {"C&B Consultant": ["IC", 3]},
-                {"Group Compensation & Benefit Director": ["M", 7]},
-                {"Senior C&B Consultant": ["IC", 4]}
+                {"C&B Consultant": ["IC", 2, ["Compensation Analysis", "Benefits Administration", "Payroll Management"], True]},
+                {"Group Compensation & Benefit Director": ["M", 7, ["Strategic Compensation Planning", "Global Benefits Management", "Executive Compensation"], False]},
+                {"Senior C&B Consultant": ["IC", 4, ["Compensation Strategy", "Market Benchmarking", "Employee Benefits"], True]},
+                {"Senior Mobility Consultant": ["IC", 3, ["Global Mobility", "Expatriate Management", "Relocation Services"], False]}
             ],
             "Organizational Development": [
-                {"Organizational Development Principal": ["IC", 5]}
+                {"Organizational Development Principal": ["IC", 5, ["Organizational Change Management", "Leadership Development", "Talent Management"], False]}
             ],
             "People and Culture Management": [
-                {"Senior Manager, Compensation & Benefits": ["M", 3]},
-                {"Senior Vice President, People & Culture": ["M", 6]},
-                {"Vice President, People & Culture": ["M", 4]}
+                {"Senior Manager, Compensation & Benefits": ["M", 3, ["Compensation Strategy", "Benefits Administration", "Employee Retention"], True]},
+                {"Senior Vice President, People & Culture": ["M", 6, ["Culture Transformation", "Employee Engagement", "Strategic HR Leadership"], False]},
+                {"Vice President, People & Culture": ["M", 4, ["HR Strategy", "Organizational Development", "Change Management"], True]}
             ],
             "People Business Partners": [
-                {"People Business Partner": ["IC", 3]},
-                {"Senior People Business Partner": ["IC", 4]},
-                {"Lead People Business Partner": ["IC", 5]},
-                {"Global People Business Partner": ["IC", 5]},
-                {"People and Culture Director": ["IC", 7]},
-                {"Senior Manager, People & Culture": ["M", 6]},
-                {"Director, People & Culture": ["M", 7]}
+                {"People Business Partner": ["IC", 3, ["Employee Relations", "Performance Management", "HR Business Partnering"], False]},
+                {"Senior People Business Partner": ["IC", 4, ["Strategic HR Support", "Talent Development", "HR Metrics"], True]},
+                {"Lead People Business Partner": ["IC", 5, ["Leadership Coaching", "Organizational Development", "Change Management"], False]},
+                {"Global People Business Partner": ["IC", 5, ["Global HR Practices", "International Employee Relations", "Cross-Cultural Management"], True]},
+                {"People and Culture Director": ["IC", 6, ["People Strategy", "Cultural Transformation", "Talent Management"], False]},
+                {"Senior Manager, People & Culture": ["M", 6, ["Talent Strategy", "HR Operations", "Organizational Effectiveness"], True]},
+                {"Director, People & Culture": ["M", 7, ["Strategic HR Leadership", "Organizational Design", "Change Management"], True]}
             ],
             "People Experience": [
-                {"Director, People Experience": ["M", 7]},
-                {"DEI Lead": ["IC", 5]}
+                {"Director, People Experience": ["M", 7, ["Employee Experience Strategy", "HR Technology", "Workplace Culture"], False]},
+                {"DEI Lead": ["IC", 5, ["Diversity & Inclusion Strategy", "Cultural Competency", "Equity Initiatives"], True]}
             ],
             "People Service Delivery": [
-                {"People Associate": ["IC", 2]},
-                {"People Consultant": ["IC", 3]},
-                {"Senior Regional People Consultant": ["IC", 4]}
+                {"Director, People Services & Experience": ["M", 3, ["HR Service Delivery", "Employee Relations", "HR Systems Management"], True]},
+                {"People Associate": ["IC", 2, ["HR Administration", "Employee Onboarding", "Benefits Enrollment"], True]},
+                {"People Consultant": ["IC", 3, ["HR Consulting", "Performance Management", "Employee Engagement"], False]},
+                {"Senior Regional People Consultant": ["IC", 3, ["Regional HR Management", "Talent Acquisition", "Employee Relations"], True]},
+                {"Global Mobility Consultant": ["IC", 2, ["Global Mobility Solutions", "Expatriate Services", "Immigration Compliance"], False]},
+                {"Manager, Global People Service Delivery": ["M", 5, ["Global HR Operations", "Service Delivery Management", "Process Improvement"], False]},
+                {"Principal People Compliance Counsel": ["IC", 4, ["Employment Law", "Compliance Management", "HR Policies"], False]},
+                {"Regional People Associate": ["IC", 1, ["HR Support", "Administrative Assistance", "Employee Records"], True]},
+                {"Regional People Consultant": ["IC", 2, ["Regional HR Strategy", "Talent Management", "Employee Relations"], True]},
+                {"Senior Manager, Global People Service Delivery": ["M", 2, ["Global HR Services", "Operational Excellence", "Stakeholder Management"], False]},
+                {"Senior People Compliance Counsel": ["IC", 3, ["Regulatory Compliance", "HR Audits", "Legal Advisory"], False]}
             ],
             "Talent Enablement": [
-                {"Global People & Culture Process Consultant": ["IC", 3]},
-                {"Talent Management Consultant": ["IC", 3]},
-                {"Senior Talent Management Consultant": ["IC", 4]},
-                {"Principal Talent Management Consultant": ["IC", 5]},
-                {"People Development Director": ["M", 7]}
+                {"Global People & Culture Process Consultant": ["IC", 2, ["HR Process Improvement", "Change Management", "Global HR Systems"], False]},
+                {"Talent Management Consultant": ["IC", 2, ["Talent Development", "Succession Planning", "Performance Management"], True]},
+                {"Senior Talent Management Consultant": ["IC", 3, ["Strategic Talent Management", "Leadership Development", "Talent Acquisition"], False]},
+                {"Principal Talent Management Consultant": ["IC", 4, ["Talent Strategy", "Organizational Development", "Executive Coaching"], True]},
+                {"People Development Director": ["M", 7, ["People Development Strategy", "Leadership Training", "Employee Engagement"], False]},
+                {"People and Culture Analyst": ["IC", 2, ["HR Analytics", "Employee Feedback", "Data Reporting"], True]},
+                {"Senior Global People & Culture Process Consultant": ["IC", 3, ["Global HR Processes", "Organizational Change", "HR Technology"], False]},
+                {"Senior Manager, Talent & Enablement": ["M", 5, ["Talent Enablement Strategy", "Employee Development", "Learning and Development"], True]}
             ],
             "Talent Acquisition": [
-                {"Talent Acquisition Associate": ["IC", 2]},
-                {"Senior Recruitment Consultant": ["IC", 4]},
-                {"Senior Manager, Talent Acquisition": ["M", 6]},
-                {"Recruitment Consultant": ["IC", 3]},
-                {"Manager, Talent Acquisition": ["M", 5]}
+                {"Talent Acquisition Associate": ["IC", 1, ["Recruitment Coordination", "Candidate Screening", "Interview Scheduling"], True]},
+                {"Senior Recruitment Consultant": ["IC", 3, ["Recruitment Strategy", "Talent Sourcing", "Stakeholder Management"], False]},
+                {"Senior Manager, Talent Acquisition": ["M", 6, ["Talent Acquisition Strategy", "Team Leadership", "Executive Recruiting"], True]},
+                {"Recruitment Consultant": ["IC", 2, ["Candidate Sourcing", "Job Market Analysis", "Recruitment Campaigns"], False]},
+                {"Manager, Talent Acquisition": ["M", 5, ["Recruitment Management", "Talent Acquisition Strategy", "Recruitment Metrics"], True]}
             ]
         }
+     }
     }
 }
-}
-  
+
