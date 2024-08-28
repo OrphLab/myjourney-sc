@@ -1,7 +1,14 @@
+import sys
+import os
+
 from flask import Flask
 from flask import render_template
 from Employee import Employee
 from resources.data.Data import IC_GRADE_DATA
+
+ROOT_DIR = "/volume1/..."
+os.chdir(ROOT_DIR)
+sys.path.append(ROOT_DIR)
 
 app = Flask(__name__)
 
