@@ -13,10 +13,15 @@ employees={
     'justyna': Employee("Justyna", "Kazimierczak", "Manager, Global People Service Delivery"),
     'alessia': Employee("Alessia","Valentina Neyjahr", "Talent Management Consultant" ),
     'johanna':Employee("Johanna"," Maria Sjögren", "Senior Talent Management Consultant" ),
-    'jakub':Employee("Jakub","Pawełczak", "Recruitment Consultant" )
-    
+    'jakub':Employee("Jakub","Pawełczak", "Recruitment Consultant" ),
+    'niels':Employee('Niels', 'Vader', 'C&B Consultant'), 
+    'niclas': Employee('Niclas', ' Nordsted', )
+
 }
 
+@app.route("/")
+def root():
+    return "Welcome! you found it!"
 
 @app.route("/user/<username>")
 def show_user_profile(username):
