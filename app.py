@@ -20,6 +20,7 @@ employees={
     'johanna':Employee("Johanna"," Maria Sjögren", "Senior Talent Management Consultant" ),
     'jakub':Employee("Jakub","Pawełczak", "Recruitment Consultant" ),
     'niels':Employee('Niels', 'Vader', 'C&B Consultant'), 
+    'niclas':Employee('Niclas', 'Nordsted', 'Senior Service Delivery Consultant'), 
     
 }
 

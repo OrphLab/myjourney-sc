@@ -256,6 +256,70 @@ JOBFAMILY_DATA_NEW = {
             ]
         }
      }
+    },
+"Services":{
+    "Consulting Services":{
+        "business_functions":{
+            "Services":[
+                {"Agile Delivery Lead":["IC", 4, ["Agile Methodologies", "Scrum", "Project Management"], False]},
+                {"Associate Financial Data Analyst":["IC", 1, ["Financial Analysis", "Data Entry", "Excel"], False]},
+                {"Associate Manager, Service Delivery":["IC", 3, ["Team Leadership", "Client Management", "Service Delivery"], True]},
+                {"Business Analyst":["IC", 2, ["Requirements Gathering", "Process Improvement", "Stakeholder Management"], False]},
+                {"Business Service Delivery Associate":["IC", 1, ["Customer Service", "Data Entry", "Problem Solving"], True]},
+                {"Business Service Delivery Consultant":["IC", 2, ["Consulting", "Client Relationship Management", "Process Optimization"], False]},
+                {"Data Advisor":["IC", 2, ["Data Analysis", "Business Intelligence", "Data Visualization"], False]},
+                {"Developer":["IC", 2, ["Software Development", "Programming", "Code Review"], False]},
+                {"DevOps Consultant":["IC", 2, ["DevOps", "Continuous Integration", "Cloud Computing"], False]},
+                {"DevOps Consultant Principal":["IC", 4, ["DevOps Strategy", "Cloud Architecture", "Team Leadership"], True]},
+                {"Director, Managed Services":["M", 5, ["Managed Services", "Operations Management", "Leadership"], False]},
+                {"Director, Service Delivery":["M", 5, ["Service Delivery", "Strategic Planning", "Team Management"], False]},
+                {"Financial Data Analyst":["IC", 2, ["Financial Modeling", "Data Analysis", "Reporting"], False]},
+                {"Financial Data Operations Manager":["M", 5, ["Operations Management", "Financial Analysis", "Team Leadership"], True]},
+                {"Global Operations Manager":["M", 5, ["Global Operations", "Supply Chain Management", "Leadership"], False]},
+                {"Head of Data Advisory":["M", 5, ["Data Strategy", "Advisory Services", "Leadership"], False]},
+                {"IT Principal":["IC", 4, ["IT Strategy", "System Architecture", "Technology Leadership"], False]},
+                {"Lead Developer":["IC", 4, ["Software Development", "Technical Leadership", "System Design"], False]},
+                {"Manager, Service Delivery":["M", 5, ["Service Delivery", "Team Leadership", "Project Management"], True]},
+                {"Operational Account Manager":["IC", 3, ["Account Management", "Client Relations", "Operational Efficiency"], False]},
+                {"Operational Services Lead":["IC", 4, ["Operations Management", "Service Delivery", "Leadership"], False]},
+                {"Principal Data Advisor":["IC", 4, ["Data Governance", "Business Intelligence", "Strategy Development"], True]},
+                {"Scrum Master":["IC", 2, ["Scrum", "Agile Coaching", "Team Facilitation"], True]},
+                {"Senior Business Service Delivery Consultant":["IC", 3, ["Business Consulting", "Service Delivery", "Client Management"], False]},
+                {"Senior Data Advisor":["IC", 3, ["Data Strategy", "Advanced Analytics", "Business Intelligence"], True]},
+                {"Senior DevOps Consultant":["IC", 3, ["DevOps Practices", "Cloud Solutions", "Automation"], False]},
+                {"Senior Documentation Translator":["IC", 2, ["Technical Writing", "Translation", "Editing"], False]},
+                {"Senior Financial Data Analyst":["IC", 3, ["Financial Analysis", "Data Reporting", "Advanced Excel"], False]},
+                {"Senior Manager, Business Service Delivery":["M", 6, ["Business Service Management", "Team Leadership", "Strategic Planning"], True]},
+                {"Senior Manager, Data Services":["M", 6, ["Data Management", "Leadership", "Strategic Planning"], False]},
+                {"Senior Manager, IT & Cloud Advisory":["M", 6, ["IT Advisory", "Cloud Computing", "Leadership"], False]},
+                {"Senior Manager, Managed Services":["M", 6, ["Managed Services", "Operations Strategy", "Leadership"], False]},
+                {"Senior Manager, Service Delivery":["M", 6, ["Service Delivery", "Team Management", "Strategic Planning"], True]},
+                {"Senior Product Owner":["M", 6, ["Product Management", "Agile Methodologies", "Stakeholder Management"], False]},
+                {"Senior Security Engineer":["IC", 3, ["Cybersecurity", "Network Security", "Vulnerability Management"], False]},
+                {"Senior Service Delivery Consultant":["IC", 3, ["Service Delivery", "Client Consulting", "Process Improvement"], False]},
+                {"Senior Service Delivery IT Consultant":["IC", 3, ["IT Consulting", "Service Management", "Client Engagement"], True]},
+                {"Senior Service Delivery Manager":["IC", 3, ["Service Delivery", "Team Management", "Process Improvement"], False]},
+                {"Senior Vice President, Service Delivery":["M", 11, ["Executive Leadership", "Service Delivery Strategy", "Business Development"], False]},
+                {"Service Delivery Associate":["IC", 1, ["Service Support", "Customer Interaction", "Data Entry"], False]},
+                {"Service Delivery Consultant":["IC", 2, ["Consulting", "Service Management", "Client Relations"], False]},
+                {"Service Delivery Director":["IC", 5, ["Service Delivery Leadership", "Strategic Planning", "Client Relations"], True]},
+                {"Service Delivery IT Consultant":["IC", 2, ["IT Service Management", "Consulting", "Client Interaction"], False]},
+                {"Service Delivery IT Principal":["IC", 4, ["IT Strategy", "Service Delivery", "Technical Leadership"], False]},
+                {"Service Delivery Manager":["IC", 2, ["Service Delivery", "Project Management", "Client Relations"], False]},
+                {"Service Delivery Manager Principal":["IC", 4, ["Service Delivery Leadership", "Team Management", "Strategic Planning"], False]},
+                {"Service Delivery Principal":["IC", 4, ["Service Delivery Strategy", "Client Relations", "Leadership"], True]},
+                {"Service Manager":["IC", 4, ["Service Management", "Operations", "Leadership"], True]},
+                {"Site Leader":["M", 9, ["Operations Management", "Leadership", "Team Development"], True]},
+                {"Student Assistant":["IC", 1, ["Administrative Support", "Data Entry", "Customer Service"], True]},
+                {"Vice President, Data & Reporting Services":["M", 10, ["Data Management", "Reporting", "Executive Leadership"], True]},
+                {"Vice President, Managed Services":["M", 10, ["Managed Services", "Executive Leadership", "Business Strategy"], True]},
+                {"Vice President, Service Delivery":["M", 10, ["Service Delivery Strategy", "Leadership", "Business Development"], True]}
+
+
+            ]
+        }
     }
+}
+
 }
 
