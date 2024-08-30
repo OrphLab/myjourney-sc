@@ -6,9 +6,7 @@ from flask import render_template
 from Employee import Employee
 from resources.data.Data import IC_GRADE_DATA
 
-ROOT_DIR = "/volume1/..."
-os.chdir(ROOT_DIR)
-sys.path.append(ROOT_DIR)
+
 
 app = Flask(__name__)
 
@@ -22,13 +20,12 @@ employees={
     'johanna':Employee("Johanna"," Maria Sjögren", "Senior Talent Management Consultant" ),
     'jakub':Employee("Jakub","Pawełczak", "Recruitment Consultant" ),
     'niels':Employee('Niels', 'Vader', 'C&B Consultant'), 
-    'niclas': Employee('Niclas', ' Nordsted', )
-
+    
 }
 
 @app.route("/")
 def root():
-    return "Welcome! you found it!"
+    return "Welcome! you found it! again!"
 
 @app.route("/user/<username>")
 def show_user_profile(username):

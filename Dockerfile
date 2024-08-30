@@ -1,17 +1,20 @@
 # Use the official Python image from the Docker Hub
 FROM python:3.9-slim
 
+# Install Git (if needed for cloning)
+RUN apt-get update && apt-get install -y git && apt-get clean
+
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the requirements file into the container
-COPY requirements.txt .
+# Copy application files into the container
+COPY . /app
 
 # Install the Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of the application code into the container
-COPY . .
+# Set the FLASK_APP environment variable
+ENV FLASK_APP=app.py
 
 # Specify the command to run your application
 CMD ["flask", "run", "--host=0.0.0.0", "--port=8080"]
