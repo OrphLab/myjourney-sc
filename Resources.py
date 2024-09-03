@@ -1,3 +1,6 @@
+
+from resources.data.Data import SKILLS_BY_BUSINESS_FUNCTION
+
 def extract_grade_data(data: dict, grade: int, jump:int = 0):
     grade_data = data.get("Grade", {}).get(grade+jump)
     if grade_data is not None:
@@ -5,3 +8,5 @@ def extract_grade_data(data: dict, grade: int, jump:int = 0):
     else:
         return "Grade not found"
     
+
+
