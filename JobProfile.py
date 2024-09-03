@@ -288,11 +288,3 @@ class JobProfile:
     #     return None
    
 #endregion
-
-def skills_output(id_list):
-    result = []
-    for business_function in SKILLS_BY_BUSINESS_FUNCTION.values():
-        for key, value in business_function.items():
-            if key is id_list:
-                result.append(value)
-    return result

@@ -4,7 +4,8 @@ import os
 from flask import Flask
 from flask import render_template
 from Employee import Employee
-from resources.data.Data import IC_GRADE_DATA
+from resources.data.Data import IC_GRADE_DATA, SKILLS_BY_BUSINESS_FUNCTION
+
 
 
 
@@ -32,8 +33,20 @@ def root():
 def show_user_profile(username):
     employee  = employees.get(username.lower())
     grades = IC_GRADE_DATA["Grade"].items()
+
+    def skills_output(skill_ids):
+        print(f"Received skill IDs: {skill_ids}")
+        print(skill_ids)
+        result = []
+        for skill_id in skill_ids:
+            for category, skills in SKILLS_BY_BUSINESS_FUNCTION.items():
+                if skill_id in skills:
+                    result.append(skills[skill_id])
+        return result
+
+
     if employee:
-        return render_template("demo.html", employee=employee, grades=grades)
+        return render_template("demo.html", employee=employee, grades=grades, skills_output=skills_output)
     else:
         return "User not found", 404
 

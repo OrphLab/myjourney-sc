@@ -128,7 +128,8 @@
               <p class="card-text"><strong>Track:</strong> {{ details[0] }}</p>
               <p class="card-text"><strong>Grade:</strong> {{ details[1] }}</p>
               <p class="card-text">
-                <strong>Skills hej:</strong> {{ details[2]|join(', ') }}
+                <strong>Skills:</strong> {{ skills_output(details[2])|join(', ') }}
+                <!--{{ details[2]|join(', ') }} -->
               </p>
             </div>
             <div class="card-footer">
@@ -184,7 +185,7 @@
                                 <p class="card-text"><strong>Track:</strong> {{ jobprofile["track"] }}</p>
                                 <p class="card-text"><strong>Grade:</strong> {{ jobprofile["grade"] }}</p>
                                 <p class="card-text">
-                                    <strong>Skills:</strong> {{ jobprofile["skills"]|join(', ') }}
+                                    <strong>Skills:</strong> {{ skills_output(jobprofile["skills"])|join(', ') }}
                                 </p>
                             </div>
                             <div class="card-footer">
