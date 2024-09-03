@@ -202,8 +202,8 @@ JOBFAMILY_DATA_NEW = {
                     {"C&B Consultant": ["IC", 2, [188, 194, 186, 187], True]},
                     {"Group Compensation & Benefit Director": ["M", 7, [188, 186, 182, 187], False]},
                     {"Senior Compensation & Benefits Consultant": ["IC", 3, [188, 194, 186, 187], True]},
-                    {"Senior C&B Consultant": ["IC", 3, [188, 194, 186, 187], True]},
-                    {"Senior Mobility Consultant": ["IC", 3, [175, 194, 186], False]}
+                    {"Senior Mobility Consultant": ["IC", 3, [175, 194, 186], False]},
+                    #{"Senior C&B Consultant": ["IC", 3, [188, 194, 186, 187], True]},
                 ],
                 "Organizational Development": [
                     {"Organizational Development Principal": ["IC", 5, [189, 190, 182], False]}
