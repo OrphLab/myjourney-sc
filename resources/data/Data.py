@@ -199,10 +199,10 @@ JOBFAMILY_DATA_NEW = {
     "People & Culture": {
             "business_functions": {
                 "Compensation & Benefits": [
-                    {"C&B Consultant": ["IC", 2, [188, 194, 186], True]},
-                    {"Group Compensation & Benefit Director": ["M", 7, [188, 186, 182], False]},
-                    {"Senior C&B Consultant": ["IC", 4, [188, 194, 186], True]},
-                    {"Senior Mobility Consultant": ["IC", 3, [179, 184, 186], False]}
+                    {"C&B Consultant": ["IC", 2, [188, 194, 186, 187], True]},
+                    {"Group Compensation & Benefit Director": ["M", 7, [188, 186, 182, 187], False]},
+                    {"Senior C&B Consultant": ["IC", 4, [188, 194, 186, 187], True]},
+                    {"Senior Mobility Consultant": ["IC", 3, [175, 194, 186], False]}
                 ],
                 "Organizational Development": [
                     {"Organizational Development Principal": ["IC", 5, [189, 190, 182], False]}
