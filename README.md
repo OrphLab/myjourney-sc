@@ -68,3 +68,7 @@ Employee.py: Defines the Employee class, which stores an employee's first name, 
 JobProfile.py: Contains the JobProfile class, responsible for retrieving and displaying job-related data such as business functions, grades, and skills.
 Grade.py: Manages grade data for individual contributors (IC) and managers (M) using the ICGrade and MGrade classes.
 app.py: The main Flask application file that handles routing and rendering employee profiles via a web interface.
+
+help commands:
+docker build -t myjourney-sc .
+docker run -p 5000:8080 myjourney-sc
