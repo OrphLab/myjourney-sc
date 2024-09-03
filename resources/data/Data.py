@@ -199,9 +199,9 @@ JOBFAMILY_DATA_NEW = {
     "People & Culture": {
             "business_functions": {
                 "Compensation & Benefits": [
-                    {"C&B Consultant": ["IC", 2, [188, 184, 186], True]},
+                    {"C&B Consultant": ["IC", 2, [188, 194, 186], True]},
                     {"Group Compensation & Benefit Director": ["M", 7, [188, 186, 182], False]},
-                    {"Senior C&B Consultant": ["IC", 4, [188, 184, 186], True]},
+                    {"Senior C&B Consultant": ["IC", 4, [188, 194, 186], True]},
                     {"Senior Mobility Consultant": ["IC", 3, [179, 184, 186], False]}
                 ],
                 "Organizational Development": [
@@ -231,15 +231,15 @@ JOBFAMILY_DATA_NEW = {
                     {"People Consultant": ["IC", 3, [184, 187, 195], False]},
                     {"Senior Regional People Consultant": ["IC", 3, [192, 184, 179], True]},
                     {"Global Mobility Consultant": ["IC", 2, [184, 186, 193], False]},
-                    {"Manager, Global People Service Delivery": ["M", 5, [179, 184, 195], False]},
+                    {"Manager, Global People Service Delivery": ["M", 5, [179, 194, 195], False]},
                     {"Principal People Compliance Counsel": ["IC", 4, [193, 194, 195], False]},
-                    {"Regional People Associate": ["IC", 1, [186, 179, 184], True]},
-                    {"Regional People Consultant": ["IC", 2, [192, 184, 187], True]},
-                    {"Senior Manager, Global People Service Delivery": ["M", 2, [179, 184, 195], False]},
+                    {"Regional People Associate": ["IC", 1, [186, 179, 194], True]},
+                    {"Regional People Consultant": ["IC", 2, [192, 194, 187], True]},
+                    {"Senior Manager, Global People Service Delivery": ["M", 2, [179, 194, 195], False]},
                     {"Senior People Compliance Counsel": ["IC", 3, [193, 194, 195], False]}
                 ],
                 "Talent Enablement": [
-                    {"Global People & Culture Process Consultant": ["IC", 2, [184, 189, 195], False]},
+                    {"Global People & Culture Process Consultant": ["IC", 2, [184, 189, 195, 194], False]},
                     {"Talent Management Consultant": ["IC", 2, [196, 182, 187], True]},
                     {"Senior Talent Management Consultant": ["IC", 3, [196, 182, 189], False]},
                     {"Principal Talent Management Consultant": ["IC", 4, [196, 182, 190], True]},
