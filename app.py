@@ -1,16 +1,9 @@
-import sys
-import os
-
 from flask import Flask
 from flask import render_template
 from Employee import Employee
-from resources.data.Data import IC_GRADE_DATA, SKILLS_BY_BUSINESS_FUNCTION
-
-
-
+from resources.data.Data import SKILLS_BY_BUSINESS_FUNCTION, IC_GRADE_DATA
 
 app = Flask(__name__)
-
 
 employees={
     'simon': Employee("Simon", "Kaczmarek", "Senior Talent Management Consultant"),
@@ -22,7 +15,6 @@ employees={
     'jakub':Employee("Jakub","Pawełczak", "Recruitment Consultant" ),
     'niels':Employee('Niels', 'Vader', 'C&B Consultant'), 
     'niclas':Employee('Niclas', 'Nordsted', 'Senior Service Delivery Consultant'), 
-    
 }
 
 @app.route("/")
@@ -33,7 +25,7 @@ def root():
 def show_user_profile(username):
     employee  = employees.get(username.lower())
     grades = IC_GRADE_DATA["Grade"].items()
-
+    
     def skills_output(skill_ids):
         print(f"Received skill IDs: {skill_ids}")
         print(skill_ids)
@@ -44,12 +36,10 @@ def show_user_profile(username):
                     result.append(skills[skill_id])
         return result
 
-
     if employee:
         return render_template("demo.html", employee=employee, grades=grades, skills_output=skills_output)
     else:
         return "User not found", 404
-
 
 if __name__ == "__main__":
     app.run(debug=True)
