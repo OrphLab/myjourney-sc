@@ -24,7 +24,7 @@ def root():
 @app.route("/user/<username>")
 def show_user_profile(username):
     employee  = employees.get(username.lower())
-    grades = IC_GRADE_DATA["Grade"].items()
+    grades = IC_GRADE_DATA["Grade"].items() #used for Frade slider on mainpage.html
     
     def skills_output(skill_ids):
         print(f"Received skill IDs: {skill_ids}")
@@ -37,7 +37,7 @@ def show_user_profile(username):
         return result
 
     if employee:
-        return render_template("demo.html", employee=employee, grades=grades, skills_output=skills_output)
+        return render_template("mainpage.html", employee=employee, grades=grades, skills_output=skills_output)
     else:
         return "User not found", 404
 

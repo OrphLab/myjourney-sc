@@ -1,5 +1,5 @@
 
-from resources.data.Data import JOBFAMILY_DATA_NEW, SKILLS_BY_BUSINESS_FUNCTION
+from resources.data.Data import JOBFAMILY_DATA_NEW
 from Grade import ICGrade, MGrade
 
 class JobProfile:
@@ -12,13 +12,11 @@ class JobProfile:
        self.track = self.jpresult[0]
        self.grade = self.jpresult[1]
        self.skills_data = self.jpresult[5]
-       #self.skills = self.skills_output(self.skills_data, SKILLS_BY_BUSINESS_FUNCTION)
        self.is_recruiting = self.jpresult[6]
 
        self.grade_data = ICGrade(self.grade) if self.track == "IC" else MGrade(self.grade)
        self.jobprofiles_in_business_function = self.get_other_job_profiles_same_business_functions_graded_oneup_sametrack(JOBFAMILY_DATA_NEW, jobprofile, self.grade, self.track)
        self.jobprofiles_in_subfamily = self.get_other_job_profiles_all_bizfunc_in_subfamily_graded_oneup_sametrack(JOBFAMILY_DATA_NEW, jobprofile,self.grade, self.track)
-       
 
     def __repr__(self) -> str:
         return (f"Family group: {self.family_group}\n"
@@ -30,8 +28,6 @@ class JobProfile:
                 f"Other profiles in BF, grade: {self.jobprofiles_in_subfamily}")
                 #f"Other JB: {self.jobprofiles_in_subfamily}")
                 #syntaxt for key value -> f"\n{self.grade_data.grade_data_5["Titles"]}
-    
-
                 
     #returns jpbprofile information, based on jobprofile(str)
     def find_job_profile(self, data: dict, jpname: str):

@@ -1,32 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Career Paths</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,500&amp;subset=latin-ext"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
 
-        <!--  jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+{% extends 'base.html' %}
 
-    <!--  Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  </head>
-
-  <body>
+{%block content%}
     <!-- Hero Section -->
     <section class="hero">
       <h2>{{employee.jobprofile.jobprofile}}</h2>
@@ -342,4 +317,4 @@
 
 
   </body>
-</html>
+{%endblock%}
